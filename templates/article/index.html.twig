@@ -29,7 +29,7 @@
                         <a href="{{ path('single_article', { 'post_id': post.id}) }}" role="button" class="listing">
                             <figure>
                                 <div class="listing_media">
-                                    <img  src="/uploads{{ asset(post.avatarFileName)}}" style="width: 30vw;">
+                                    <img  src="{{ asset(post.avatarDirectory)}}">
                                 </div>
                                 <figcaption style="padding: 35px 0;">
                                     <h2 class="listing_title">{{ post.title }}</h2>

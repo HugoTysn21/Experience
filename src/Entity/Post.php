@@ -28,22 +28,6 @@ class Post
      */
     private $title;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $avatarFileName;
-
-    /**
-     * @Assert\Image(
-     *     maxSize = "500000k",
-     *     mimeTypesMessage = "Max size is 50Mb."
-     * )
-     */
-    private $avatar;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $content;
 
     /**
@@ -75,6 +59,19 @@ class Post
      * @ORM\Column(type="text", nullable=true)
      */
     private $contentFour;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $avatarDirectory;
+
+    /**
+     * @Assert\Image(
+     *     maxSize = "500000k",
+     *     mimeTypesMessage = "Max size is 50Mb."
+     * )
+     */
+    private $avatar;
 
     public function getId(): ?int
     {
@@ -113,30 +110,6 @@ class Post
     public function setTitle(string $title): self
     {
         $this->title = $title;
-
-        return $this;
-    }
-
-    public function getAvatarFileName(): ?string
-    {
-        return $this->avatarFileName;
-    }
-
-    public function setAvatarFileName(string $avatarFileName): self
-    {
-        $this->avatarFileName = $avatarFileName;
-
-        return $this;
-    }
-
-    public function getAvatar(): ?UploadedFile
-    {
-        return $this->avatar;
-    }
-
-    public function setAvatar(UploadedFile $avatar): self
-    {
-        $this->avatar = $avatar;
 
         return $this;
     }
@@ -209,6 +182,32 @@ class Post
     public function setContentFour(?string $contentFour): self
     {
         $this->contentFour = $contentFour;
+
+        return $this;
+    }
+
+    public function getAvatarDirectory(): ?string
+    {
+        return $this->avatarDirectory;
+    }
+
+    public function setAvatarDirectory(?string $avatarDirectory): self
+    {
+        $this->avatarDirectory = $avatarDirectory;
+
+        return $this;
+    }
+
+    public function getAvatar(): ?UploadedFile
+    {
+        return $this->avatar;
+    }
+
+    public function setAvatar(UploadedFile $avatar): self
+    {
+        $this->avatar = $avatar;
+        var_dump($avatar->getPath());
+        dump($avatar->getPath());
 
         return $this;
     }

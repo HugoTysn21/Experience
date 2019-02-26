@@ -11,14 +11,13 @@
                 <th>Id</th>
                 <th>CreatedBy</th>
                 <th>Title</th>
-                <th>AvatarFileName</th>
-                <th>Content</th>
                 <th>Introduction</th>
                 <th>CreatedAt</th>
                 <th>IntroductionPost</th>
                 <th>ContentTwo</th>
                 <th>ContentThree</th>
                 <th>ContentFour</th>
+                <th>AvatarDirectory</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -28,14 +27,13 @@
                 <td>{{ post.id }}</td>
                 <td>{{ post.createdBy }}</td>
                 <td>{{ post.title }}</td>
-                <td>{{ post.avatarFileName }}</td>
-                <td>{{ post.content }}</td>
                 <td>{{ post.introduction }}</td>
                 <td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ post.introductionPost }}</td>
                 <td>{{ post.contentTwo }}</td>
                 <td>{{ post.contentThree }}</td>
                 <td>{{ post.contentFour }}</td>
+                <td>{{ post.avatarDirectory }}</td>
                 <td>
                     <a href="{{ path('post_show', {'id': post.id}) }}">show</a>
                     <a href="{{ path('post_edit', {'id': post.id}) }}">edit</a>
@@ -43,7 +41,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="12">no records found</td>
+                <td colspan="11">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
