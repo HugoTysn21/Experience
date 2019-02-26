@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+{% block bodyClass %}single{% endblock %}
+
+{% block body %}
+    <!--Title-->
+    <div class="container header">
+        <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
+    </div>
+    <!--Introduction!-->
+<section class="intro">
+    <div class="container">
+        <div class="heading">
+            <h1></h1>
+        </div>
+    </div>
+        <div class="hero-container module size-grid">
+            <div class="hero module-content">
+                <img src="http://placehold.jp/1840x1343.png" alt="">
+            </div>
+        </div>
+<div class="container meta">
+    <div class="content-container">
+        <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
+            incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
+            de industria milites agentes.</p>
+    </div>
+</div>
+</section>
+    <section class="modules">
+        <div class="module image-group size-grid">
+            <div class="module-contents">
+                <div class="image-grid col 2">
+                    <div class="image-container no-image-caption">
+                        <img src="" alt="">
+                    </div>
+                    <div class="image-container no-image-caption">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="module image size-eight caption-below">
+            <div class="module content">
+                <div class="image-container no-caption">
+                    <img src="" alt="">
+                </div>
+                <div class="side-caption right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="next-posts">
+        <div class="container">
+            <div class="content">
+                <small></small>
+                <h3></h3>
+                <small></small>
+            </div>
+        </div>
+    </section>
+    <!--Picture-->
+
+    <!--Content-->
+    <div class="container">
+        <div>
+            <article>
+                <div>
+                    <h2>{{ post.content }}</h2>
+                    <p>{{ post.createdBy }}</p>
+                    <p>{{ post.createdAt|date('Y-m-d H:i:s') }}</p>
+                    <p>{{ post.contentTwo }}</p>
+                    <p>{{ post.contentThree }}</p>
+                    <p>{{ post.contentFour }}</p>
+                    <img  src="/uploads{{ asset(post.avatarFileName)}}">
+                </div>
+            </article>
+
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="nav-footer">
+            <div class="content-left">
+
+            </div>
+            <div class="content-right">
+
+            </div>
+        </div>
+    </footer>
+{% endblock %}

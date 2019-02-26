@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block bodyClass %}about{% endblock %}
+{% block body %}
+<div class="container header">
+    <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
+</div>
+    <div class="containerL">
+        <div class="wrap">
+            <div class="container about">
+        <div class="container about title">
+            <p>about</p>
+        </div>
+        <div class="container first">
+            <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
+                incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
+                de industria milites agentes.</p>
+        </div>
+            </div>
+        <div class="container statistics">
+            <div class="container statistics statistics-title">
+                <p>Statistics</p>
+            </div>
+            <div class="container statistics element">
+                <div class="container statistics element left">
+                    <p>My hobbies</p>
+                    <h2>2789</h2>
+                </div>
+                <div class="container statistics element center">
+                    <p>Languages can i use</p>
+                    <h2>Swift</h2>
+                </div>
+                <div class="container statistics element right">
+                    <p>Line on GitHub</p>
+                    <h2>117K</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}

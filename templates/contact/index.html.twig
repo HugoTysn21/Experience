@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block bodyClass %}contact{% endblock %}
+    {% block body %}
+        <script src="/assets/scripts/typed.min.js"> </script>
+
+        <script>
+            import Typed from "typed.js/src/typed";
+            document.addEventListener('DOMContentLoaded', () => {
+
+                if (document.body.classList.contains('contact')) {
+
+                    new Typed('#typed',
+                        {
+                            strings: ["fejfnjifn", "ddhjbnfh"]
+                        })
+                }
+            });
+        </script>
+        <div class="container header">
+            <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
+        </div>
+        <div class="containerL">
+            <div class="wrap">
+                <div class="container fields">
+                <div class="container contact-title">
+                    <h1>Contact</h1>
+                </div>
+                <div class="container contact-expression">
+                    <span id="typed"></span>
+                    <p>Projects to be defined? Let's talk about them.</p>
+                    <h3>adresse@gmail.com</h3>
+                </div>
+                </div>
+                <div class="container contact">
+                    {{ form_start(formContact, {'action': path('mail'), 'method': 'POST'}) }}
+                    {{ form_start(formContact,{'attr': { 'class': 'theme-form' }} ) }}
+                    {{ form_row(formContact.name,{'attr' : {'placeholder' :"Your Name", "class": "form-control"}}) }}
+                    {{ form_row(formContact.email,{'attr' : {'placeholder' :"Your Email Adress", "class": "form-control"}}) }}
+                    {{ form_row(formContact.subject,{'attr' : {'placeholder' :"Subject", "class": "form-control"}}) }}
+                    {{ form_row(formContact.message,{'attr' : {'placeholder' :"Your message","class": "form-control"}}) }}
+                    {{ form_row(formContact.send,{'attr' : {'placeholder' :"Envoyer",'class':"form-control width100 btn-primary"}}) }}
+                    {{ form_end(formContact) }}
+                </div>
+            </div>
+        </div>
+
+
+        {% endblock %}

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">☎️ Me contacter</h1>
+                <br/>
+
+            </div>
+        </div>
+        <div class="col-md-8 order-md-1">
+            {% for content in app.flashes('notice') %}
+                <div class="flash-notice">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <p>Adresse mail : <a href="mailto:{{ email }}">{{ email }}</a></p>
+            <p>Nom : {{ name }}</p>
+            <p>Contenu :</p>
+            <div>{{ message }}</div>
+        </div>
+    </div>
+</div>

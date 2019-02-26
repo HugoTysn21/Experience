@@ -1,0 +1,20 @@
+@import "commons/body";
+
+@import "layouts/homepage";
+@import "layouts/about";
+@import "layouts/article";
+@import "layouts/contact";
+@import "layouts/single";
+
+
+/*
+Dans ce fichier je vais importer toute mes templates de mes pages
+
+C'est a dire que j'ai une template CSS par page
+
+je l'inscris dans ce fichier via le @import et en gros il va avoir toutes les template et quand j'irai sur la pages en question
+il activera sa template associé,
+
+il faudra bien mettre dans le base.html.twig le fichier main.scss
+
+ */

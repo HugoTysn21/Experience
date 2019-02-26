@@ -1,0 +1,381 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3"> 📊  Expériences</h1>
+        <br/>
+        <p>Dans cette catégorie se présente un CV en ligne détaillant expériences professionnelles et compétences.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="side flex-2">
+            <div class="ml-1">
+                <h2><i class="fas fa-graduation-cap"></i> Ma formation</h2>
+                <p><p>Je suis actuellement en formation de<a href="https://www.ynov.com/formation/ynov-informatique/" target="_blank"> Bachelor Informatique et Systèmes d'Information en 2nd année.</a></p>
+
+                <p>Nous étudions : <strong>L'infrastructure réseau</strong> ainsi que la <strong>sécurité</strong>, le <strong>développement web & applicatif.</strong></p>
+                </p>
+                <br/>
+                <h2><i class="fas fa-address-card"></i> Mon parcours</h2>
+                <p><p style="margin-left:40px"><strong> - BEP - Systèmes Electroniques Numériques</strong> | <em>2014 - 2016</em><br/>
+                    <strong>- Baccalauréat Pro - Systèmes Electroniques Numériques(option infra réseaux)</strong> |<em>2017</em><br/>
+                    <strong>- Bachelor Ingénierie Informatique - Architecture et systèmes d'Information</strong> |<em> 2017 - 2020</em><br/>
+                    <strong>- Cycle Master</strong> |<em> 2020 - 2022</em><br/>
+                </p>
+                <br/>
+                <h2><i class="fas fa-briefcase"></i> Mes expériences professionnelles</h2>
+                <br/>
+                <p>
+                    <span style="color:#e74c3c"><img class="img_ava6" src="../../media/img/index.png"></span><strong>Stagiaire Support Infrastructure (3 mois)</strong>
+                <ul>
+                    <li><strong> Juin 2018 </strong><em> au </em><strong> Septembre 2018 </strong>
+                        <ul>
+                            <li>Gestion de ticket incidents</li>
+                            <li>Gestion d'infrastructure virtualisés</li>
+                            <li>Gestion des taches d'exploitation backup</li>
+                            <li>Déploiement de poste / serveur</li>
+                            <li>Maintenance & prestations sur site (Caisse d'epargne & GL Events)</li>
+                            <li>Création de documentation technique (procédure d'installation)</li><br/>
+                        </ul>
+                    </li>
+                </ul>
+
+                <span style="color:#e74c3c"><img class="img_ava6" src="../../media/img/yad.jpg"></span><strong>Technicien & Réseau (4 mois)</strong>
+                <ul>
+                    <br/>
+                    <li><em></em><strong>juillet 2017</strong><em> au </em><strong>Aout 2017</strong>
+                    <li><em></em><strong>Novembre 2016</strong><em> au </em><strong>Janvier 2017</strong>
+                        <ul>
+                            <li>Maintenance réseau</li>
+                            <li>Developpement web</li>
+                            <li>Dépannage</li>
+                            <li>Administration Windows Server</li>
+                            <li>Migration donnée serveur (SQL,CRM,EXCHANGE)</li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <span style="color:#e74c3c"><img class="img_ava6" src="../../media/img/pulsatt.png"></span> <strong>Stagiaire Technicien Informatique & Réseaux (2 mois)</strong>
+                <ul>
+                    <br/>
+                    <li><strong> Janvier 2016</strong><em> au</em><strong> Mars 2016</strong>
+                        <ul>
+                            <li>Dépannage & maintenances chez les clients</li>
+                            <li>Réparation electronique </li>
+                            <li>Formations sur logiciel</li>
+                            <li>Installation de poste (OS, configurations, optimisations...)</li>
+                            <li>Installation de matériel electronique <br/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="side flex-1">
+            <p>
+                <button type="button"onclick="move3(),move2(),move4(),move5(),move6(),move7(),move8(),move9(),move10(),move11(),move12(),move13()" class="btn btn-warning btn-lg btn-block">Cliquez pour découvrir mes compétences</button>
+
+                <!-- Compétence Réseaux Infra -->
+
+                <div class="side flex-1">
+                    <h2><i class="fas fa-code-branch"></i> Mes compétences Réseaux</h2>
+            <p><ul>
+                <li><span style="color:#dc3545"><strong>Administration Environnement Server Microsoft</strong></span></li>
+            </ul>
+
+            <div class="progress">
+                <div class="bg-danger progress-bar" id="myBar9" style="text-align:center; width:0%"></div>
+            </div>
+            <script>
+                function move9() {
+                    var elem = document.getElementById("myBar9");
+                    var width = 20;
+                    var id = setInterval(frame, 18);
+                    function frame() {
+                        if (width >= 60) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1  + '%';
+                        }
+                    }
+                }
+            </script>
+            <ul>
+                <li><span style="color:#ffc107"><strong>Base GNU Unix/Linux</strong></span></li>
+            </ul>
+
+            <div class="progress">
+                <div class="bg-warning progress-bar" id="myBar10" style="text-align:center; width:0%"></div>
+            </div>
+            <script>
+                function move10() {
+                    var elem = document.getElementById("myBar10");
+                    var width = 20;
+                    var id = setInterval(frame, 18);
+                    function frame() {
+                        if (width >= 40) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1  + '%';
+                        }
+                    }
+                }
+            </script>
+            <ul>
+                <li><strong><span style="color:#ff9a50">CCNA 1</span></strong></li>
+            </ul>
+
+            <div class="progress">
+                <div class="bg-success progress-bar" id="myBar11" style="text-align:center; width:0%"></div>
+            </div>
+            <script>
+                function move11() {
+                    var elem = document.getElementById("myBar11");
+                    var width = 20;
+                    var id = setInterval(frame, 18);
+                    function frame() {
+                        if (width >= 80) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1  + '%';
+                        }
+                    }
+                }
+            </script>
+            <ul>
+                <li><strong><span style="color:#ffc107">Virtualisation</span></strong></li>
+            </ul>
+
+            <div class="progress">
+                <div class="bg-warning progress-bar" id="myBar13" style="text-align:center; width:0%"></div>
+            </div>
+            <script>
+                function move13() {
+                    var elem = document.getElementById("myBar13");
+                    var width = 20;
+                    var id = setInterval(frame, 18);
+                    function frame() {
+                        if (width >= 30) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1  + '%';
+                        }
+                    }
+                }
+            </script>
+            <ul>
+                <li><strong><span style="color:#5474ff">Sécurity & hacking </span></strong></li>
+            </ul>
+
+            <div class="progress">
+                <div class="bg-infos progress-bar" id="myBar12" style="color:#edefff;text-align:center; width:0%"></div>
+            </div>
+            <script>
+                function move12() {
+                    var elem = document.getElementById("myBar12");
+                    var width = 20;
+                    var id = setInterval(frame, 18);
+                    function frame() {
+                        if (width >= 25) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            elem.innerHTML = width * 1  + '%';
+                        }
+                    }
+                }
+            </script>
+            </p>
+
+            <br/>
+            <br/>
+            <!-- Compétences Applicatif -->
+            <div class="side flex-1">
+                <h2><i class="fas fa-code-branch"></i> Mes compétences Logiciel</h2>
+                <p><ul>
+                    <li><span style=" color:#dc3545"><strong>Java</strong></span></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-danger progress-bar" id="myBar5" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move5() {
+                        var elem = document.getElementById("myBar5");
+                        var width = 20;
+                        var id = setInterval(frame, 17);
+                        function frame() {
+                            if (width >= 40) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                <ul>
+                    <li><span style="color:#17a2b8"><strong>C</strong></span></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-infos progress-bar" id="myBar6" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move6() {
+                        var elem = document.getElementById("myBar6");
+                        var width = 20;
+                        var id = setInterval(frame, 17);
+                        function frame() {
+                            if (width >= 45) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                <ul>
+                    <li><strong><span style="color:#ffc107">SQL</span></strong></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-warning progress-bar" id="myBar7" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move7() {
+                        var elem = document.getElementById("myBar7");
+                        var width = 20;
+                        var id = setInterval(frame, 17);
+                        function frame() {
+                            if (width >= 45) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                <ul>
+                    <li><span style="color:#28a745"><strong>Powershell</strong></span></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-success progress-bar" id="myBar8" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move8() {
+                        var elem = document.getElementById("myBar8");
+                        var width = 20;
+                        var id = setInterval(frame, 17);
+                        function frame() {
+                            if (width >= 21) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                </p>
+
+                <br/>
+                <br/>
+                <h2><i class="fas fa-code-branch"></i> Mes compétences Web</h2>
+
+                <ul>
+                    <li><span style="color:#17a2b8"><strong>HTML & CSS</strong></span></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-infos progress-bar" id="myBar2"style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move2() {
+                        var elem = document.getElementById("myBar2");
+                        var width = 20;
+                        var id = setInterval(frame, 18);
+                        function frame() {
+                            if (width >= 65) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                <ul>
+                    <li><strong><span style="color:#ffc107">PHP</span></strong></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-warning progress-bar" id="myBar3" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move3() {
+                        var elem = document.getElementById("myBar3");
+                        var width = 20;
+                        var id = setInterval(frame, 20);
+                        function frame() {
+                            if (width >=45) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                <ul>
+                    <li><span style="color:#28a745"><strong>Javascript</strong></span></li>
+                </ul>
+
+                <div class="progress">
+                    <div class="bg-success progress-bar" id="myBar4" style="text-align:center; width:0%"></div>
+                </div>
+                <script>
+                    function move4() {
+                        var elem = document.getElementById("myBar4");
+                        var width = 20;
+                        var id = setInterval(frame, 17);
+                        function frame() {
+                            if (width >= 25) {
+                                clearInterval(id);
+                            } else {
+                                width++;
+                                elem.style.width = width + '%';
+                                elem.innerHTML = width * 1  + '%';
+                            }
+                        }
+                    }
+                </script>
+                </p>
+
+                <br/>
+                <br/>
+                {% endblock %}

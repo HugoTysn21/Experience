@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block bodyClass %}homepage{% endblock %}
+
+{% block body %}
+    <html>
+    <body>
+    <main role="main" class="inner cover">
+        <div class="containerL">
+            <img src="{{ background }}" alt="" class="profPicHomepage">
+            <ul class="link-list">
+                <li class="container projectme"><a class="cover-heading" href="{{ path('article') }}">Workshop</a></li>
+                <li class="container workme"><a class="cover-heading" href="{{ path('work_exp') }}">Exp</a></li>
+                <li class="container aboutme"><a class="cover-heading" href="{{ path('about') }}">About me</a> </li>
+                <li class="container contactme"><a class="cover-heading" href="{{ path('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </main>
+    </body>
+    </html>
+{% endblock %}
+
+

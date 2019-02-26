@@ -1,0 +1,98 @@
+.contact{
+  background-color: #1c2833  ;
+
+  .header {
+    padding: 4vh 0 0 0;
+    margin: 0;
+
+    a {
+      font-family: 'medium', sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 28px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      position: relative;
+      top: 2.5vh;
+      left: 2.5vh;
+      display: block;
+      cursor: pointer;
+      background-color: #faf7fd;
+      width: 200px;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-70%);
+        width: 0;
+        background-color:#181818;
+        height: 5px;
+        transition: width 0.4s;
+      }
+
+      &:hover {
+        &::after {
+          width: calc(75% + 12px);
+        }
+      }
+    }
+  }
+  .containerL{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    .wrap{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 10vh 2vh;
+      z-index: 10;
+      position: relative;
+      .fields{
+        padding: 0 10vh;
+        width: 100%;
+      }
+      .contact-title{
+        padding: 4vh 0;
+        h1{
+          font-size: 4vw;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+      .contact-expression{
+
+        p{
+          font-size: 2vw;
+          font-weight: 400;
+          text-transform: uppercase;
+          span{
+            height: 1000px;
+          }
+
+        }
+        h3{
+          padding: 2.5vh 0;
+          font-size: 1.5vw;
+        }
+      }
+      .contact{
+        width: 55vw;
+        padding: 10vh 0;
+        label{
+          display: none;
+        }
+        form{
+          div{
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}

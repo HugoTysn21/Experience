@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+{% block bodyClass %}article{% endblock %}
+{% block body %}
+    <div class="container header">
+        <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
+    </div>
+    <div class="containerL">
+        <div class="wrap">
+            <div class="row">
+                <div class="col a6-12 c12-12">
+                    <h2>Workshop</h2>
+                </div>
+                <div class="col a6-12 c12-12">
+                   <h3>Projects</h3>
+                    <p class="number">6</p>
+                </div>
+                <div class="col a6-12 c12-12">
+                    <div class="page-description">
+                        <p>Quo cognito Constantius ultra mortalem modum exarsitQuo
+                            cognito Constantius ultra mortalem modum exarsitQuo cognito Constantius ultra mortalem modum exarsit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="wrap">
+                <div class="row-article">
+                    {% for post in posts %}
+                    <div class="col a6-12 d12-12">
+                        <a href="{{ path('single_article', { 'post_id': post.id}) }}" role="button" class="listing">
+                            <figure>
+                                <div class="listing_media">
+                                    <img  src="/uploads{{ asset(post.avatarFileName)}}" style="width: 30vw;">
+                                </div>
+                                <figcaption style="padding: 35px 0;">
+                                    <h2 class="listing_title">{{ post.title }}</h2>
+                                    <p class="listing_intro">{{ post.introduction }}</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </div>
+{% endblock %}
