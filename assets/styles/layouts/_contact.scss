@@ -1,5 +1,5 @@
 .contact{
-  background-color: #1c2833  ;
+  background: #f0f0f2;
 
   .header {
     padding: 4vh 0 0 0;
@@ -18,7 +18,7 @@
       left: 2.5vh;
       display: block;
       cursor: pointer;
-      background-color: #faf7fd;
+      background: #f0f0f2;
       width: 200px;
 
       &::after {
@@ -68,9 +68,13 @@
       .contact-expression{
 
         p{
-          font-size: 2vw;
+          font-size: 20px;
           font-weight: 400;
           text-transform: uppercase;
+
+          @include breakpoint('720px') {
+            font-size: 60px;
+          }
           span{
             height: 1000px;
           }
@@ -78,7 +82,8 @@
         }
         h3{
           padding: 2.5vh 0;
-          font-size: 1.5vw;
+          font-size: 15px;
+
         }
       }
       .contact{

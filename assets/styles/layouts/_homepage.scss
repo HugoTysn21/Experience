@@ -32,12 +32,17 @@
         display: block;
 
         a {
-          font-size: 64px;
+
           color: white;
           text-decoration: none;
           position: relative;
           font-weight: 700;
           text-transform: uppercase;
+          font-size: 45px;
+
+          @include breakpoint('375px'){
+            font-size: 64px;
+          }
 
           &::after {
             content: '';
