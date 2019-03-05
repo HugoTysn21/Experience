@@ -16,7 +16,7 @@
       left: 2.5vh;
       display: block;
       cursor: pointer;
-      background-color: #faf7fd;
+      background-color: #f0f0f2;
       width: 200px;
 
       &::after {
@@ -39,50 +39,61 @@
       }
     }
   }
-.intro{
-  .container{
-    .heading{
+  .containerL{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
 
-    }
-  }
-  .hero-container.module.size-grid{
-    .hero{
+  .intro{
+     .container{
+       .heading{
+         h1{
+           font-size: 40px;
+         }
+       }
+     }
+     .hero-container.module.size-grid{
+       .hero{
 
-    }
-    .module-content{
-      img{
+       }
+       .module-content{
+         img{
 
-      }
-    }
-  }
-  .meta{
-    .content-container{
+         }
+       }
+     }
+     .meta{
+       .content-container{
 
-    }
-  }
-}
-  .modules{
-    .module{
-      .image-group{
+       }
+     }
+   }
+    .modules{
+      .module{
+        .image-group{
 
-      }
-      .size-grid{
+        }
+        .size-grid{
 
-      }
-      .module-contents{
-        .image-grid{
-          .image-container{
+        }
+        .module-contents{
+          .image-grid{
+            .image-container{
 
-          }
-          .no-image-caption{
+            }
+            .no-image-caption{
 
-          }
-          .no-caption{
+            }
+            .no-caption{
 
+            }
           }
         }
       }
-    }
 
+    }
   }
 }

@@ -7,74 +7,81 @@
         <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
     </div>
     <!--Introduction!-->
-<section class="intro">
-    <div class="container">
-        <div class="heading">
-            <h1></h1>
-        </div>
-    </div>
-        <div class="hero-container module size-grid">
-            <div class="hero module-content">
-                <img src="http://placehold.jp/1840x1343.png" alt="">
-            </div>
-        </div>
-<div class="container meta">
-    <div class="content-container">
-        <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
-            incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
-            de industria milites agentes.</p>
-    </div>
-</div>
-</section>
-    <section class="modules">
-        <div class="module image-group size-grid">
-            <div class="module-contents">
-                <div class="image-grid col 2">
-                    <div class="image-container no-image-caption">
-                        <img src="" alt="">
-                    </div>
-                    <div class="image-container no-image-caption">
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="module image size-eight caption-below">
-            <div class="module content">
-                <div class="image-container no-caption">
-                    <img src="" alt="">
-                </div>
-                <div class="side-caption right">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="next-posts">
+    <div class="containerL">
+    <section class="intro">
         <div class="container">
-            <div class="content">
-                <small></small>
-                <h3></h3>
-                <small></small>
+            <div class="heading">
+                <h1>Making a Great Brand More Accessible to a Wider Audience</h1>
+                <img src="http://placehold.jp/1000x450.png" alt="">
             </div>
         </div>
-    </section>
-    <!--Picture-->
-
-    <!--Content-->
-    <div class="container">
-        <div>
-            <article>
-                <div>
-                    <h2>{{ post.content }}</h2>
-                    <p>{{ post.createdBy }}</p>
-                    <p>{{ post.createdAt|date('Y-m-d H:i:s') }}</p>
-                    <p>{{ post.contentTwo }}</p>
-                    <p>{{ post.contentThree }}</p>
-                    <p>{{ post.contentFour }}</p>
-                    <img  src="/uploads{{ asset(post.avatarFileName)}}">
+            <div class="hero-container module size-grid">
+                <div class="hero module-content">
+                    <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
+                        incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
+                        de industria milites agentes.</p>
+                    <img src="http://placehold.jp/450x450.png" alt="">
+                    <img src="http://placehold.jp/450x450.png" alt="">
                 </div>
-            </article>
+            </div>
+    <div class="container meta">
+        <div class="content-container">
+            <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
+                incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
+                de industria milites agentes.</p>
+        </div>
+    </div>
+    </section>
+        <section class="modules">
+            <div class="module image-group size-grid">
+                <div class="module-contents">
+                    <div class="image-grid col 2">
+                        <div class="image-container no-image-caption">
+                            <img src="" alt="">
+                        </div>
+                        <div class="image-container no-image-caption">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="module image size-eight caption-below">
+                <div class="module content">
+                    <div class="image-container no-caption">
+                        <img src="" alt="">
+                    </div>
+                    <div class="side-caption right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="next-posts">
+            <div class="container">
+                <div class="content">
+                    <small></small>
+                    <h3></h3>
+                    <small></small>
+                </div>
+            </div>
+        </section>
+        <!--Picture-->
 
+        <!--Content-->
+        <div class="container">
+            <div>
+                <article>
+                    <div>
+                        <h2>{{ post.content }}</h2>
+                        <p>{{ post.createdBy }}</p>
+                        <p>{{ post.createdAt|date('Y-m-d H:i:s') }}</p>
+                        <p>{{ post.contentTwo }}</p>
+                        <p>{{ post.contentThree }}</p>
+                        <p>{{ post.contentFour }}</p>
+                        {#<img src="{{ asset(post.avatarDirectory)}}">#}
+                    </div>
+                </article>
+
+            </div>
         </div>
     </div>
     <!--Footer-->

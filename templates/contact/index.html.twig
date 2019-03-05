@@ -1,35 +1,19 @@
 {% extends 'base.html.twig' %}
 {% block bodyClass %}contact{% endblock %}
     {% block body %}
-        <script src="/assets/scripts/typed.min.js"> </script>
-
-        <script>
-            import Typed from "typed.js/src/typed";
-            document.addEventListener('DOMContentLoaded', () => {
-
-                if (document.body.classList.contains('contact')) {
-
-                    new Typed('#typed',
-                        {
-                            strings: ["fejfnjifn", "ddhjbnfh"]
-                        })
-                }
-            });
-        </script>
         <div class="container header">
-            <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Menu</a>
+            <a class="btn btn-lg btn-secondary " href="{{ path('homepage') }}">Home</a>
         </div>
         <div class="containerL">
             <div class="wrap">
                 <div class="container fields">
-                <div class="container contact-title">
-                    <h1>Contact</h1>
-                </div>
-                <div class="container contact-expression">
-                    <span id="typed"></span>
-                    <p>Projects to be defined? Let's talk about them.</p>
-                    <h3>adresse@gmail.com</h3>
-                </div>
+                    <div class="container contact-title">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="container contact-expression">
+                        <span id="typed"></span>
+                        <h3>adresse@gmail.com</h3>
+                    </div>
                 </div>
                 <div class="container contact">
                     {{ form_start(formContact, {'action': path('mail'), 'method': 'POST'}) }}
@@ -43,6 +27,4 @@
                 </div>
             </div>
         </div>
-
-
-        {% endblock %}
+    {% endblock %}

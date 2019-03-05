@@ -125,6 +125,7 @@ body.about {
 
       .s-title {
         display: block;
+        margin: 0 0 40px 0;
 
         p {
           font-weight: 700;
@@ -174,7 +175,7 @@ body.about {
           }
 
           h2 {
-            font-weight: 800;
+            font-weight: 700;
             font-style: normal;
             text-transform: uppercase;
             font-size: 20px;
@@ -182,10 +183,10 @@ body.about {
             margin: 16px 0;
 
             @include breakpoint('250px') {
-              font-size: 40px;
+              font-size: 35px;
             }
             @include breakpoint('980px') {
-              font-size: 80px;
+              font-size: 64px;
             }
           }
         }

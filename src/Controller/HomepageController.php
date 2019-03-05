@@ -14,8 +14,10 @@ class HomepageController extends AbstractController
     {
         $ramdomImg = [
             '/uploads/asia.jpg',
-            '/uploads/broadway.png',
-            '/uploads/broadway2.png',
+            '/uploads/pexels-photo-940035.jpeg',
+            '/uploads/austin-neill-189146-unsplash.jpg',
+            '/uploads/pexels-photo-1112109.jpeg',
+            '/uploads/pexels-photo-256219.jpeg',
         ];
 
         $randomIndex = rand(0, sizeof($ramdomImg)-1);

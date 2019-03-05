@@ -67,16 +67,13 @@
       }
       .contact-expression{
 
-        p{
+        span{
           font-size: 20px;
           font-weight: 400;
           text-transform: uppercase;
 
           @include breakpoint('720px') {
             font-size: 60px;
-          }
-          span{
-            height: 1000px;
           }
 
         }
