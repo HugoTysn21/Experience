@@ -60,7 +60,7 @@
       .contact-title{
         padding: 4vh 0;
         h1{
-          font-size: 4vw;
+          font-size: 7vw;
           font-weight: 700;
           text-transform: uppercase;
         }
@@ -71,9 +71,10 @@
           font-size: 20px;
           font-weight: 400;
           text-transform: uppercase;
+          color: #0a0035;
 
           @include breakpoint('720px') {
-            font-size: 60px;
+            font-size: 54px;
           }
 
         }

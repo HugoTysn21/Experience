@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Image;
-use App\Form\Image1Type;
+use App\Form\Image2Type;
 use App\Repository\ImageRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
@@ -31,7 +31,7 @@ class ImageController extends AbstractController
     public function new(Request $request): Response
     {
         $image = new Image();
-        $form = $this->createForm(Image1Type::class, $image);
+        $form = $this->createForm(Image2Type::class, $image);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -68,7 +68,7 @@ class ImageController extends AbstractController
      */
     public function edit(Request $request, Image $image): Response
     {
-        $form = $this->createForm(Image1Type::class, $image);
+        $form = $this->createForm(Image2Type::class, $image);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

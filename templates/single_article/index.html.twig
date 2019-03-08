@@ -12,87 +12,84 @@
         <div class="container">
             <div class="heading">
                 <h1>Making a Great Brand More Accessible to a Wider Audience</h1>
-                <img src="http://placehold.jp/1000x450.png" alt="">
+                <img src="{{ asset(post.avatarDirectory) }}" alt="">
             </div>
         </div>
             <div class="hero-container module size-grid">
-                <div class="hero module-content">
-                    <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
-                        incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
-                        de industria milites agentes.</p>
-                    <img src="http://placehold.jp/450x450.png" alt="">
-                    <img src="http://placehold.jp/450x450.png" alt="">
+                <div class="module-content">
+                    {{ content|raw }}
                 </div>
+                {#<div class="hero module-content-item">#}
+                    {#<img src="http://placehold.jp/450x450.png" alt="">#}
+                    {#<img src="http://placehold.jp/450x450.png" alt="">#}
+                {#</div>#}
             </div>
-    <div class="container meta">
-        <div class="content-container">
-            <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
-                incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes
-                de industria milites agentes.</p>
-        </div>
-    </div>
     </section>
-        <section class="modules">
-            <div class="module image-group size-grid">
-                <div class="module-contents">
-                    <div class="image-grid col 2">
-                        <div class="image-container no-image-caption">
-                            <img src="" alt="">
-                        </div>
-                        <div class="image-container no-image-caption">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="module image size-eight caption-below">
-                <div class="module content">
-                    <div class="image-container no-caption">
-                        <img src="" alt="">
-                    </div>
-                    <div class="side-caption right">
-                    </div>
-                </div>
-            </div>
-        </section>
+        {#<section class="modules">#}
+            {#<div class="module image-group size-grid">#}
+                {#<div class="module-contents">#}
+                    {#<div class="image-grid col 2">#}
+                        {#<div class="image-container no-image-caption">#}
+                            {#<img src="" alt="">#}
+                        {#</div>#}
+                        {#<div class="image-container no-image-caption">#}
+                            {#<img src="" alt="">#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+            {#<div class="module image size-eight caption-below">#}
+                {#<div class="module content">#}
+                    {#<div class="image-container no-caption">#}
+                        {#<img src="" alt="">#}
+                    {#</div>#}
+                    {#<div class="side-caption right">#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</section>#}
         <section class="next-posts">
             <div class="container">
-                <div class="content">
-                    <small></small>
-                    <h3></h3>
-                    <small></small>
+                <div class="prev">
+                    <div class="thumbnails-container">
+                        <a href="">
+                            <p class="heading"></p>
+                        </a>
+                        <a href="">
+                            <div class="background-image"></div>
+                        </a>
+                    </div>
+                    <div class="meta-container">
+                        <small></small>
+                        <h3></h3>
+                        <small></small>
+                    </div>
+
+                </div>
+                <div class="next">
+                    <div class="thumbnails-container">
+                        <a href="">
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="meta-container">
+                        <small></small>
+                        <h3></h3>
+                        <small></small>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!--Picture-->
-
-        <!--Content-->
-        <div class="container">
-            <div>
-                <article>
-                    <div>
-                        <h2>{{ post.content }}</h2>
-                        <p>{{ post.createdBy }}</p>
-                        <p>{{ post.createdAt|date('Y-m-d H:i:s') }}</p>
-                        <p>{{ post.contentTwo }}</p>
-                        <p>{{ post.contentThree }}</p>
-                        <p>{{ post.contentFour }}</p>
-                        {#<img src="{{ asset(post.avatarDirectory)}}">#}
-                    </div>
-                </article>
-
-            </div>
+        <div class="footer-copyright text-center py-3">
+            <p>© 2019 Copyright <a href="https://mdbootstrap.com/education/bootstrap/"> hugolantillon.ovh</a></p>
         </div>
     </div>
+
     <!--Footer-->
-    <footer>
-        <div class="nav-footer">
-            <div class="content-left">
+    <!-- Footer Elements -->
 
-            </div>
-            <div class="content-right">
+    <!-- Copyright -->
 
-            </div>
-        </div>
-    </footer>
+    <!-- Copyright -->
 {% endblock %}

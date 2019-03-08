@@ -28,8 +28,6 @@ class Post
      */
     private $title;
 
-    private $content;
-
     /**
      * @ORM\Column(type="string", length=255)
      */
@@ -46,21 +44,6 @@ class Post
     private $introductionPost;
 
     /**
-     * @ORM\Column(type="text")
-     */
-    private $contentTwo;
-
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $contentThree;
-
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
-    private $contentFour;
-
-    /**
      * @ORM\Column(type="text", nullable=true)
      */
     private $avatarDirectory;
@@ -72,6 +55,11 @@ class Post
      * )
      */
     private $avatar;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $content;
 
     public function getId(): ?int
     {
@@ -114,18 +102,6 @@ class Post
         return $this;
     }
 
-    public function getContent(): ?string
-    {
-        return $this->content;
-    }
-
-    public function setContent(string $content): self
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
     public function getIntroduction(): ?string
     {
         return $this->introduction;
@@ -146,42 +122,6 @@ class Post
     public function setIntroductionPost(string $introductionPost): self
     {
         $this->introductionPost = $introductionPost;
-
-        return $this;
-    }
-
-    public function getContentTwo(): ?string
-    {
-        return $this->contentTwo;
-    }
-
-    public function setContentTwo(string $contentTwo): self
-    {
-        $this->contentTwo = $contentTwo;
-
-        return $this;
-    }
-
-    public function getContentThree(): ?string
-    {
-        return $this->contentThree;
-    }
-
-    public function setContentThree(string $contentThree): self
-    {
-        $this->contentThree = $contentThree;
-
-        return $this;
-    }
-
-    public function getContentFour(): ?string
-    {
-        return $this->contentFour;
-    }
-
-    public function setContentFour(?string $contentFour): self
-    {
-        $this->contentFour = $contentFour;
 
         return $this;
     }
@@ -208,6 +148,18 @@ class Post
         $this->avatar = $avatar;
         var_dump($avatar->getPath());
         dump($avatar->getPath());
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(string $content): self
+    {
+        $this->content = $content;
 
         return $this;
     }

@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Post;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Parsedown;
 use Symfony\Component\Routing\Annotation\Route;
 
 class SingleArticleController extends AbstractController
@@ -17,13 +18,18 @@ class SingleArticleController extends AbstractController
             return $this->redirectToRoute('article');
         }
 
+        $parser = new Parsedown();
+
         $post = $this->getDoctrine()
             ->getRepository(Post::class)
             ->find($post_id);
 
+        dump($post);
+
         return $this->render('single_article/index.html.twig', [
             'controller_name' => 'SingleArticleController',
-            'post'  =>  $post
+            'post'  =>  $post,
+            'content'   => $parser->text($post->getContent())
         ]);
     }
 }

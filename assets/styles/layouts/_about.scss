@@ -84,8 +84,9 @@ body.about {
         margin: 10px;
 
       @include breakpoint('375px'){
-        margin: 20px;
+        margin: 40px 3vw;
       }
+
 
       h1 {
         font-weight: 700;
@@ -93,7 +94,7 @@ body.about {
         font-size: 40px;
 
         @include breakpoint('375px'){
-          font-size: 74px;
+          font-size: 70px;
         }
       }
 
@@ -101,18 +102,19 @@ body.about {
         padding: 0 15px;
         position: relative;
         transition: all 850ms cubic-bezier(1, 0, 0, 1);
+        margin: 30px 3vw;
 
         p {
           font-weight: normal;
           font-style: normal;
-          font-size: 30px;
+          font-size: 28px;
           line-height: 32px;
           text-transform: uppercase;
           color: #1a1a1a;
           max-width: 1285px;
 
           @include breakpoint('375px'){
-            font-size: 65px;
+            font-size: 60px;
             line-height: 60px;
 
           }
@@ -120,7 +122,7 @@ body.about {
       }
     }
     .statistic-section {
-      padding: 55px 5vw;
+      padding: 55px 3vw;
       justify-content: center;
 
       .s-title {
@@ -134,7 +136,7 @@ body.about {
           color: #1a1a1a;
 
           @include breakpoint('375px') {
-            font-size: 74px;
+            font-size: 70px;
           }
         }
       }
@@ -143,10 +145,10 @@ body.about {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        padding-left: 3vw;
         @include breakpoint('720px') {
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: space-around;
         }
 
         &__item {
@@ -162,15 +164,15 @@ body.about {
 
           p {
             text-transform: uppercase;
-            font-size: 28px;
+            font-size: 26px;
             line-height: 1.7;
-            margin-top: auto;
+            margin-top: 0;
             margin-bottom: auto;
             color: #000;
 
 
             @include breakpoint('980px') {
-              font-size: 40px;
+              font-size: 38px;
             }
           }
 
@@ -183,10 +185,10 @@ body.about {
             margin: 16px 0;
 
             @include breakpoint('250px') {
-              font-size: 35px;
+              font-size: 32px;
             }
             @include breakpoint('980px') {
-              font-size: 64px;
+              font-size: 56px;
             }
           }
         }
