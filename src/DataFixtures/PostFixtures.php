@@ -20,8 +20,9 @@ class PostFixtures extends Fixture
 
     /**
      * @Assert\DateTime
-     * @var string A "Y-m-d H:i:s" formatted value
+     *
      * @param ObjectManager $manager
+     * @throws \Exception
      */
     public function load(ObjectManager $manager)
     {
@@ -32,10 +33,9 @@ class PostFixtures extends Fixture
         $post1->setCreatedAt(new DateTime());
         $post1->setIntroduction('wesh');
         $post1->setIntroductionPost('attention CDS');
-        $post1->setAvatarFileName('\Fnatic_2018_profileicon.png');
+        $post1->setAvatarDirectory('\Fnatic_2018_profileicon.png');
         $post1->setContent('PRESENTATION CDS');
-        $post1->setContentTwo('ert CDS');
-        $post1->setContentThree('cee CDS');
+
         $manager->persist($post1);
 
         $post2 = new Post();
@@ -44,10 +44,8 @@ class PostFixtures extends Fixture
         $post2->setCreatedAt(new DateTime());
         $post2->setIntroduction('wesh alors');
         $post2->setIntroductionPost('attention CDS');
-        $post2->setAvatarFileName('\Fnatic_2018_profileicon.png');
+        $post2->setAvatarDirectory('\Fnatic_2018_profileicon.png');
         $post2->setContent('PRESENTATION CDS');
-        $post2->setContentTwo('ert CDS');
-        $post2->setContentThree('cee CDS');
         $manager->persist($post2);
 
         $user = new User();
