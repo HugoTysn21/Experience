@@ -68,8 +68,8 @@
            align-self: center;
 
            @include breakpoint('375px') {
-             font-size: 40px;
-           }
+              font-size: 40px;
+            }
          }
          img{
            position: relative;
@@ -82,10 +82,12 @@
      }
      .hero-container.module.size-grid{
        .module-content{
-         display: grid;
-         grid-column-gap: 45px;
-         grid-row-gap: 30px;
-         grid-template-columns: 1fr;
+         display: flex;
+         flex-wrap: wrap;
+         //display: grid;
+         //grid-column-gap: 45px;
+         //grid-row-gap: 30px;
+         //grid-template-columns: 1fr;
          justify-content: center;
          align-self: center;
          padding: 0 40px;
@@ -99,13 +101,13 @@
          }
 
          p{
-           font-size: 16px;
+           font-size: 14px;
            height: auto;
            padding: 10px 35px;
            width: 100%;
 
            @include breakpoint('375px') {
-             font-size: 25px;
+             font-size: 22px;
              margin: 30px;
              max-width: 750px;
            }
