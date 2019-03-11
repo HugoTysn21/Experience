@@ -28,7 +28,7 @@
                     <a href="{{ path('single_article', { 'post_id': post.id}) }}" role="button" class="listing">
                         {{ post.title }}
                     </a>
-                    <p>{{ post.introduction }}</p>
+                    <p>Posted {{ post.createdAt|date('d/m/Y') }}</p>
                 </div>
             {% endfor %}
         </div>
