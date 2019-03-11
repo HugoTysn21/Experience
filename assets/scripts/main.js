@@ -1,5 +1,4 @@
 import Typed from 'typed.js'
-import $ from 'jquery'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -25,4 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 "I quickly developed this passion following a project that was carried out both at the university and outside."]
             });
     }
-};
+});
