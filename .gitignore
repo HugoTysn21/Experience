@@ -19,5 +19,4 @@
 /.idea/
 .DS_STORE
 /public/dist
-/public/uploads
 package-lock.json
