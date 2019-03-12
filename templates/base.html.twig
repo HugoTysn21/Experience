@@ -18,6 +18,11 @@
 
     </head>
     <body class="{% block bodyClass %}empty{% endblock %}">
+    {% for message in app.flashes('notice') %}
+        <div class="alert alert-success flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %}
         {% block body %}
             {# {% if is_granted('ROLE_USER') %} #}
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}

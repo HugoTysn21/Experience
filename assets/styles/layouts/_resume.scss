@@ -143,7 +143,6 @@ body.resume{
     .resume{
       display: flex;
       flex-direction: column;
-      max-width: 80vw;
       padding: 50px 0 50px 225px;
       align-items: center;
 
@@ -169,36 +168,47 @@ body.resume{
           max-width: 500px;
           margin: 0 3vw;
         }
+
         .formation-list,.job-list,.skills-list{
           &__item{
            width: 40vw;
             height: auto;
-            max-width: 570px;
+            max-width: 500px;
+
             h2{
               font-size: 32px;
               font-weight: 800;
               padding: 10px 0 30px 0;
+              color: #044abc;
             }
             h5{
               font-size: 22px;
               font-weight: 800;
-              padding: 5px 0 15px 120px;
+              padding: 5px 0 15px 0px;
+              color: #353349;
             }
             time{
-              font-size: 16px;
-              padding: 0 0 50px 150px;
+              font-size: 14px;
+              padding: 0;
+              margin: 0;
             }
             div{
-              padding: 0 0 20px 150px;
+              padding: 0 0 15px;
               p{
+                margin: 0;
+                padding: 0;
                 font-size: 18px;
                 font-weight: 600;
                 color: #0a0035;
+                max-width: 420px;
+                width: 100%;
               }
               ul,li{
+                max-width: 420px;
+                width: 100%;
                 font-size: 16px;
                 font-weight: 600;
-                padding-top: 20px;
+                padding-top: 10px;
                 color: #0a0035;
               }
             }
