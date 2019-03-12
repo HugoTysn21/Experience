@@ -55,7 +55,7 @@ class ContactController extends AbstractController
             $entityManager->persist($contact);
             $entityManager->flush();
 
-            return $this->redirectToRoute('article');
+            return $this->redirectToRoute('contact');
 
 
         }
@@ -95,7 +95,7 @@ class ContactController extends AbstractController
 
         $mailer->send($messageReceive);
 
-        return $this->render('homepage/index.html.twig', [
+        return $this->render('contact/confirmation.html.twig', [
             'name'      => $surname,
             'email'     => $email,
             'message'   => $message
