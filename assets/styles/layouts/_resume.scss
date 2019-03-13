@@ -161,6 +161,16 @@ body.resume{
         grid-template-columns: 1fr;
         margin: 25px auto auto;
 
+        .experience::before{
+          content: "";
+          position: relative;
+          height: 100%;
+          width: 1px;
+          background-color: #b750ee;
+          right: 80px;
+          top: 0;
+          border-radius: 3px;
+        }
         @include breakpoint('375px') {
           grid-template-columns: 1fr 1fr;
         }
@@ -170,10 +180,27 @@ body.resume{
         }
 
         .formation-list,.job-list,.skills-list{
+
           &__item{
            width: 40vw;
             height: auto;
             max-width: 500px;
+
+            //&::after{
+            //  content: "";
+            //  display: block;
+            //  position: absolute;
+            //  height: 12px;
+            //  width: 12px;
+            //  border-radius: 8px;
+            //  background-color: #d4483e;
+            //  left: 80px;
+            //  top: 6px;
+            //  -webkit-transform: translateX(-48%);
+            //  -ms-transform: translateX(-48%);
+            //  transform: translateX(-48%);
+            //}
+
 
             h2{
               font-size: 32px;

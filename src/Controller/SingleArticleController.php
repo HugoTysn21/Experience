@@ -24,8 +24,6 @@ class SingleArticleController extends AbstractController
             ->getRepository(Post::class)
             ->find($post_id);
 
-        dump($post);
-
         return $this->render('single_article/index.html.twig', [
             'controller_name' => 'SingleArticleController',
             'post'  =>  $post,
