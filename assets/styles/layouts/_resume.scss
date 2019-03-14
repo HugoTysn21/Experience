@@ -210,12 +210,27 @@ body.resume{
               padding: 10px 0 30px 0;
               color: #044abc;
             }
-            h5{
+            h5 {
               font-size: 22px;
               font-weight: 800;
               padding: 5px 0 15px 0px;
               color: #353349;
+
+              &::before {
+                content: "";
+                display: block;
+                background-color: #bc190c;
+                height: 3px;
+                width: 25px;
+                position: absolute;
+                left: -94px;
+                -webkit-box-shadow: rgba(0, 0, 0, .15) 0 2px 4px 0;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
+                height: 5px;
+                margin-top: 10px;
+              }
             }
+
             time{
               font-size: 14px;
               padding: 0;
