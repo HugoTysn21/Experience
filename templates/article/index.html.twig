@@ -23,7 +23,7 @@
             {% for post in posts %}
                 <div class="single-post">
                     <figure>
-                        <img src="{{ asset(post.avatarDirectory) }}">
+                        <img src="{{ (post.avatarDirectory) }}">
                     </figure>
                     <a href="{{ path('single_article', { 'post_id': post.id}) }}" role="button" class="listing">
                         {{ post.title }}
