@@ -23,11 +23,13 @@
             {% for post in posts %}
                 <div class="single-post">
                     <figure>
-                        <img src="{{ (post.avatarDirectory) }}">
+                        <img src="{{ asset(post.avatarDirectory) }}">
+
                     </figure>
                     <a href="{{ path('single_article', { 'post_id': post.id}) }}" role="button" class="listing">
                         {{ post.title }}
                     </a>
+                    <p>{{ post.avatarDirectory }}</p>
                     <p>Posted {{ post.createdAt|date('d/m/Y') }}</p>
                 </div>
             {% endfor %}
