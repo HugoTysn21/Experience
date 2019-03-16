@@ -82,21 +82,39 @@
           }
 
         }
-        h3{
-          padding: 2.5vh 0;
-          font-size: 15px;
+      }
 
-        }
-        a{
-          max-width: 200px;
-          img{
-            width: 100%;
-            height: auto;
-            margin: auto;
+      .message{
+        div{
+          display: flex;
+          flex-direction: row;
+          margin: 0 20vw;
+          max-width: 1000px;
+          a{
+            padding-left: 8vw;
+            padding-top: 100px;
+            padding-right: 3vw;
+            svg{
+              fill: #044abc;
+              width: 50px;
+              height: 50px;
+              margin: auto;
+
+              @include breakpoint('375px') {
+                width: 125px;
+                height: 125px;
+              }
+              @include breakpoint('980px') {
+                width: 200px;
+                height: 200px;
+              }
+
+            }
+
           }
         }
-
       }
+
       .contact{
         width: 55vw;
         padding: 10vh 0;
