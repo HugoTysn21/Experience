@@ -29,13 +29,18 @@
                         </a>
                     </div>
                 </div>
+                {% for flash_message in app.session.flashBag.get('success') %}
+                    <div id="success-mail" class="alert alert-success">
+                        {{ flash_message }}
+                    </div>
+                {% endfor %}
                 <div class="container contact">
                     {{ form_start(formContact, {'action': path('mail'), 'method': 'POST'}) }}
                     {{ form_start(formContact,{'attr': { 'class': 'theme-form' }} ) }}
                     {{ form_row(formContact.name,{'attr' : {'placeholder' :"Your Name", "class": "form-control"}}) }}
                     {{ form_row(formContact.email,{'attr' : {'placeholder' :"Your Email Adress", "class": "form-control"}}) }}
                     {{ form_row(formContact.subject,{'attr' : {'placeholder' :"Subject", "class": "form-control"}}) }}
-                    {{ form_row(formContact.message,{'attr' : {'placeholder' :"Your message","class": "form-control"}}) }}
+                    {{ form_row(formContact.message,{'attr' : {'placeholder' :"Your message", "class": "form-control"}}) }}
                     {{ form_row(formContact.send,{'attr' : {'placeholder' :"Envoyer",'class':"form-control width100 btn-primary"}}) }}
                     {{ form_end(formContact) }}
                 </div>

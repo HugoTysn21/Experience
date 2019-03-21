@@ -37,10 +37,8 @@ class ContactController extends AbstractController
             $email = $form['email']->getData();
             $subject = $form['subject']->getData();
             $message = $form['message']->getData();
-            $this->addFlash(
-                'notice',
-                'your message are correctly sent'
-            );
+            $this->addFlash("success", "Votre message a été envoyé avec succès !");
+            $flashbag = $this->get('session')->getFlashBag();
 
             # set form data
 
