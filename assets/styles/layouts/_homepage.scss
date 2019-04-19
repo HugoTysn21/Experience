@@ -38,11 +38,14 @@
           position: relative;
           font-weight: 700;
           text-transform: uppercase;
-          font-size: 34px;
+          font-size: 27px;
 
-          @include breakpoint('375px'){
-            font-size: 64px;
+          @include breakpoint('345px'){
+            font-size: 36px;
           }
+          @include breakpoint('375px'){
+             font-size: 64px;
+           }
           @include breakpoint('1440px') {
             font-size: 90px;
           }
