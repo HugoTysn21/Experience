@@ -81,7 +81,7 @@
       padding: 0 64px;
       box-sizing: border-box;
 
-      @include breakpoint('375px') {
+      @include breakpoint('420px') {
         height: 220px;
       }
       @include breakpoint('1950px') {

@@ -77,6 +77,10 @@ body.resume{
       white-space: normal;
       padding-left: 74px;
 
+      @include breakpoint('420px') {
+        padding-left: 20px;
+      }
+
       h2 {
         font-size: 6vw;
         line-height: 1.3;

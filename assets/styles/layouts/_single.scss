@@ -81,7 +81,7 @@
            z-index: 10;
            align-self: center;
 
-           @include breakpoint('375px') {
+           @include breakpoint('450px') {
               font-size: 40px;
             }
          }
@@ -105,9 +105,9 @@
 
          h1{
            margin: 70px 0 25px 20px;
-           font-size: 15px;
+           font-size: 22px;
 
-           @include breakpoint('375px') {
+           @include breakpoint('420px') {
              font-size: 32px;
              margin: 100px 0 50px 40px;
            }
@@ -122,14 +122,12 @@
          }
 
          p{
-           font-size: 12px;
+           font-size: 14px;
            height: auto;
            padding: 10px 10px;
            width: 100%;
 
-
-
-           @include breakpoint('375px') {
+           @include breakpoint('420px') {
              font-size: 22px;
              padding: 10px 35px;
              margin: 30px;
